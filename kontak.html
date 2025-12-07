@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LessonIta - Kontak</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="fade-in">
+    <header>
+      <nav class="navbar">
+        <div class="logo">LessonIta</div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="artikel.html">Artikel</a></li>
+          <li><a href="tentang.html">Tentang Saya</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="kontak">
+      <h2>Kontak Saya</h2>
+
+      <form action="kirim_pesan.php" method="POST">
+        <input type="text" name="nama" placeholder="Nama" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="pesan" placeholder="Pesan" rows="4" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 LessonIta. Semua Hak Dilindungi.</p>
+    </footer>
+  </body>
+</html>

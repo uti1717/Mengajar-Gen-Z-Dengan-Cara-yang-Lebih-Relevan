@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LessonIta - Artikel</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        background-color: #111f30;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+      }
+
+      /* navbar */
+      .navbar {
+        background-color: #0a2a43;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar .logo {
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+      .nav-links a:hover {
+        color: #ffccff;
+      }
+
+      /* konten artikel */
+      .artikel {
+        padding: 60px 100px;
+        text-align: center;
+      }
+      .artikel h1 {
+        color: white;
+        margin-bottom: 40px;
+        font-size: 40px;
+      }
+      .artikel h3 {
+        font-size: 18px;
+      }
+      .artikel h2 {
+        font-size: 30px;
+      }
+
+      /* grid */
+      .artikel-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        justify-items: center;
+      }
+
+      /* card */
+      .card {
+        background-color: #075e79;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 100%;
+        max-width: 330px;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .card h3 {
+        padding: 10px 15px;
+        font-size: 18px;
+        color: white;
+        font-weight: 600;
+      }
+      .card p {
+        padding: 0 15px 20px 15px;
+        color: white;
+        font-size: 15px;
+      }
+
+      .card-link {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* responsive */
+      @media (max-width: 1024px) {
+        .artikel-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 768px) {
+        .artikel-container {
+          grid-template-columns: 1fr;
+        }
+        .artikel {
+          padding: 40px 30px;
+        }
+      }
+
+      /* footer */
+      footer {
+        background-color: #0a2a43;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body class="fade-in">
+    <header>
+      <nav class="navbar">
+        <div class="logo">LessonIta</div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="artikel.html" class="active">Artikel</a></li>
+          <li><a href="tentang.html">Tentang Saya</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="artikel">
+      <!-- video utama materi -->
+      <div class="video-section">
+        <h1 class="video-title">Materi Pembelajaran Lengkap</h1>
+
+        <!-- thumbnail video -->
+        <a
+          href="https://youtu.be/o2LLYZZNKqs"
+          target="_blank"
+          class="video-thumb"
+        >
+          <img
+            src="https://img.youtube.com/vi/o2LLYZZNKqs/maxresdefault.jpg"
+            alt="Video Thumbnail"
+          />
+          <div class="play-button">▶</div>
+        </a>
+      </div>
+
+      <h2 class="section-title">Bagaimana sih sosok pengajar masa kini?</h2>
+
+      <div class="image-row">
+        <img src="gambar/gambar1.jpg" alt="gambar" />
+        <div class="text-box">
+          <h3>
+            Pengajar yang bisa menciptakan suasana belajar yang menyenangkan.
+          </h3>
+        </div>
+      </div>
+
+      <div class="image-row">
+        <img src="gambar/gambar2.jpg" style="height: 550px" alt="gambar" />
+        <div class="text-box">
+          <h3>Pengajar juga harus MELEK DIGITAL.</h3>
+        </div>
+      </div>
+
+      <div class="image-row">
+        <img src="gambar/gambar3.jpg" style="height: 550px" alt="gambar" />
+        <div class="text-box">
+          <h3>Pengajar juga harus menjadi ROLE MODEL.</h3>
+        </div>
+      </div>
+
+      <link rel="stylesheet" href="style-gambar.css" />
+
+      <h2>Daftar Metode Pembelajaran</h2>
+
+      <!-- daftar materi tetap seperti sebelumnya -->
+      <div class="artikel-container">
+        <!-- materi 1 -->
+        <a href="artikel1.html" class="card-link">
+          <div class="card">
+            <img src="gambar/gambar4.png" alt="Merangkai Listrik" />
+            <div>
+              <h3>MP | MATERI I | Isu Terkini</h3>
+              <p>Mengaitkan Pembelajaran dengan Isu Terkini.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- materi 2 -->
+        <a href="artikel2.html" class="card-link">
+          <div class="card">
+            <img src="gambar/gambar7.jpg" alt="Panen Sayur" />
+            <div>
+              <h3>MP | MATERI II | Berbasis Proyek</h3>
+              <p>Metode Pembelajaran Berbasis Proyek dalam Belajar.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- materi 3 -->
+        <a href="artikel3.html" class="card-link">
+          <div class="card">
+            <img src="gambar/gambar10.jpg" alt="Merangkai Listrik" />
+            <div>
+              <h3>MP | MATERI III | Pemelajaran Visual</h3>
+              <p>Metode Pembelajaran Visual oleh Guru.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- materi 4 -->
+        <a href="artikel4.html" class="card-link">
+          <div class="card">
+            <img src="gambar/gambar13.jpg" alt="Merangkai Listrik" />
+            <div>
+              <h3>MP | MATERI IV | Observasi Nyata</h3>
+              <p>Pembelajaran Berbasis Observasi Nyata.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- materi 5 -->
+        <a href="artikel5.html" class="card-link">
+          <div class="card">
+            <img src="gambar/gambar16.png" alt="Merangkai Listrik" />
+            <div>
+              <h3>MP | MATERI V | Kreativitas dan Kewirausahaan</h3>
+              <p>Kreativitas dan Kewirausahaan.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- materi 6 -->
+        <a href="artikel6.html" class="card-link">
+          <div class="card">
+            <img src="gambar/gambar19.png" alt="Merangkai Listrik" />
+            <div>
+              <h3>MP | MATERI VI | Blended Learning</h3>
+              <p>Metode Blended Learning di Era Pendidikan Modern.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 LessonIta. Semua Hak Dilindungi.</p>
+    </footer>
+  </body>
+</html>
